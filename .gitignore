@@ -1,2 +1,142 @@
-# .gitignore
-📌 Insert your gitignore here.
+# FILE: .gitignore
+# VERSION: 1.0
+# DESCRIPTION: Git ignore file for Amon Research Labs AFT repository
+# AUTHOR: Christopher R. Amon - Amon Research Labs
+# CREATED: 2025-09-11
+
+# ==== SENSITIVE/PRIVATE FILES ====
+ek*
+eklectic*
+*[Ww][Ii][Pp]
+*[Ww].[Ii].[Pp]
+[Ww][Ii][Pp]*
+[Ww].[Ii].[Pp]*
+
+# Personal information
+*.personal
+personal_*
+*_personal.*
+
+# Financial/business information
+*.finance
+business_*
+financial_*
+
+# Email addresses and contact info
+contacts.*
+emails.*
+*_contacts.*
+
+# Private keys and certificates
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+*.ssh
+
+# ==== DATA FILES ====
+# Large datasets
+*.csv
+*.h5
+*.hdf5
+*.dat
+*.bin
+
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# ==== BUILD/TEMP FILES ====
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# ==== SYSTEM FILES ====
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# ==== BLENDER/3D FILES ====
+# Large Blender files
+*.blend1
+*.blend2
+*.blend*~
+*.blend
+
+# 3D model exports (too large)
+*.fbx
+*.obj
+*.dae
+*.3ds
+
+# ==== RESEARCH NOTES ====
+# Draft documents
+*_draft.*
+draft_*
+notes_*
+*_notes.*
+
+# Meeting transcripts
+transcripts/
+meeting_*
+*_meeting.*
+
+# ==== CONFIGURATION ====
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-*
+
+# ======GIT=======
+.codespellrc
+.editorconfig
+.gitignore
+.githooks
+.kateproject
+
+# ==== ALLOW EXCEPTIONS ====
+# Keep small example files
+!examples/*.csv
+!samples/*.dat
+!demo_*.blend
